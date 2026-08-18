@@ -13,11 +13,11 @@
           <footer>
             <span class="quote-name">{{ 'testimonials.entries.' + t.id + '.name' | transloco }}</span>
             <span class="quote-role">
-              {{ 'testimonials.entries.' + t.id + '.role' | transloco }}@
+              {{ 'testimonials.entries.' + t.id + '.role' | transloco }}<span> &#64; </span>
               @if (companyUrl(t.id); as companyUrl) {
                 <a class="quote-company" [href]="companyUrl" target="_blank" rel="noopener">{{ 'testimonials.entries.' + t.id + '.company' | transloco }}</a>
               } @else {
-                <span class="quote-company">{{ 'testimonials.entries.' + t.id + '.company' | transloco }}</span>
+                <span class="quote-company"> @ {{ 'testimonials.entries.' + t.id + '.company' | transloco }}</span>
               }
             </span>
           </footer>
