@@ -11,7 +11,7 @@
     "toggleMenu": "Toggle navigation menu"
   },
   "hero": {
-    "greeting": "Hi, my name is",
+    "greeting": "Hi, I am",
     "tagline": "I build distributed backend systems",
     "pitch": "Lead Senior Backend Engineer with 9+ years of production experience designing, building and scaling event-driven microservices, high-throughput data pipelines, and cloud-native systems in <span class=\"hl\">Java</span>, <span class=\"hl\">Go</span>, <span class=\"hl\">Kotlin</span> and <span class=\"hl\">.NET</span>. Based in Bratislava, Slovakia — available for long-term B2B contracts.",
     "ctaContact": "Get in touch",
@@ -27,7 +27,7 @@
       "experience": { "label": "Experience", "value": "9+ years in production" },
       "engagement": { "label": "Engagement", "value": "B2B contracts, long-term preferred" },
       "location": { "label": "Location", "value": "Bratislava, Slovakia" },
-      "languages": { "label": "Languages", "value": "Czech, Slovak (native) · English, German (professional)" },
+      "languages": { "label": "Languages", "value": "Slovak, Czech (native) · English, German (professional)" },
       "outsideOfWork": { "label": "Outside of work", "value": "Hiking and reading" }
     }
   },
@@ -108,16 +108,25 @@
     "title": "What people say",
     "entries": {
       "testimonial-1": {
-        "quote": "Placeholder — replace with a real quote about working with Daniel.",
-        "role": "Role @ Company"
+        "quote": "Daniel is a great contributor to the development of the GIN application. With his knowledge in Java, Spring Boot, Angular, Docker/Kubernetes and PostgreSQL he enriched the application with new features. As a valued team player, he is very supportive and strives to keep the software quality on a high level.",
+        "role": "Project Manager",
+        "company": "EBP",
+        "companyUrl": "https://www.ebp.global/ch-de",
+        "name": "Christoph Graf"
       },
       "testimonial-2": {
         "quote": "Placeholder — replace with a real quote about working with Daniel.",
-        "role": "Role @ Company"
+        "role": "Role",
+        "company": "Company",
+        "companyUrl": null,
+        "name": "Name"
       },
       "testimonial-3": {
         "quote": "Placeholder — replace with a real quote about working with Daniel.",
-        "role": "Role @ Company"
+        "role": "Role",
+        "company": "Company",
+        "companyUrl": null,
+        "name": "Name"
       }
     }
   },

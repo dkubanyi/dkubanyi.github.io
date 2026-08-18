@@ -30,6 +30,5 @@ export interface Project {
 
 export interface Testimonial {
   id: string;
-  name: string;
   placeholder?: boolean;
 }

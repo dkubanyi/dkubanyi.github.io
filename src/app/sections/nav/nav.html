@@ -12,15 +12,32 @@
     </nav>
 
     <div class="lang-switch">
-      @for (lang of availableLangs; track lang) {
-        <button
-          type="button"
-          class="lang-option"
-          [class.active]="language.activeLang() === lang"
-          (click)="setLanguage(lang)"
-        >
-          {{ lang }}
-        </button>
+      <button
+        type="button"
+        class="lang-trigger"
+        (click)="toggleLangMenu()"
+        [attr.aria-expanded]="langMenuOpen()"
+        aria-haspopup="listbox"
+      >
+        <span class="flag">{{ currentLangMeta().flag }}</span>
+        <span class="chevron" [class.open]="langMenuOpen()">▾</span>
+      </button>
+      @if (langMenuOpen()) {
+        <ul class="lang-menu" role="listbox">
+          @for (lang of availableLangs; track lang) {
+            <li role="option" [attr.aria-selected]="language.activeLang() === lang">
+              <button
+                type="button"
+                class="lang-option"
+                [class.active]="language.activeLang() === lang"
+                (click)="selectLanguage(lang)"
+              >
+                <span class="flag">{{ langMeta[lang].flag }}</span>
+                <span class="lang-name">{{ langMeta[lang].name }}</span>
+              </button>
+            </li>
+          }
+        </ul>
       }
     </div>
 

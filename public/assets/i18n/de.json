@@ -11,7 +11,7 @@
     "toggleMenu": "Navigationsmenü umschalten"
   },
   "hero": {
-    "greeting": "Hallo, mein Name ist",
+    "greeting": "Hallo, ich bin",
     "tagline": "Ich baue verteilte Backend-Systeme",
     "pitch": "Lead Senior Backend Engineer mit über 9 Jahren Produktionserfahrung in der Konzeption, Entwicklung und Skalierung ereignisgesteuerter Microservices, Hochdurchsatz-Datenpipelines und Cloud-nativer Systeme in <span class=\"hl\">Java</span>, <span class=\"hl\">Go</span>, <span class=\"hl\">Kotlin</span> und <span class=\"hl\">.NET</span>. Ansässig in Bratislava, Slowakei — verfügbar für langfristige B2B-Verträge.",
     "ctaContact": "Kontakt aufnehmen",
@@ -27,7 +27,7 @@
       "experience": { "label": "Erfahrung", "value": "9+ Jahre in Produktion" },
       "engagement": { "label": "Auftragsart", "value": "B2B-Verträge, langfristig bevorzugt" },
       "location": { "label": "Standort", "value": "Bratislava, Slowakei" },
-      "languages": { "label": "Sprachen", "value": "Tschechisch, Slowakisch (Muttersprache) · Englisch, Deutsch (verhandlungssicher)" },
+      "languages": { "label": "Sprachen", "value": "Slowakisch, Tschechisch, (Muttersprache) · Englisch, Deutsch (verhandlungssicher)" },
       "outsideOfWork": { "label": "Freizeit", "value": "Wandern und Lesen" }
     }
   },
@@ -108,16 +108,25 @@
     "title": "Was andere sagen",
     "entries": {
       "testimonial-1": {
-        "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
-        "role": "Rolle @ Unternehmen"
+        "quote": "Daniel ist ein großartiger Mitwirkender bei der Entwicklung der GIN-Anwendung. Mit seinem Wissen in Java, Spring Boot, Angular, Docker/Kubernetes und PostgreSQL hat er die Anwendung um neue Funktionen bereichert. Als geschätzter Teamplayer ist er sehr unterstützend und bemüht sich stets, die Softwarequalität auf hohem Niveau zu halten.",
+        "role": "Project Manager",
+        "company": "EBP",
+        "companyUrl": "https://www.ebp.global/ch-de",
+        "name": "Christoph Graf"
       },
       "testimonial-2": {
         "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
-        "role": "Rolle @ Unternehmen"
+        "role": "Rolle",
+        "company": "Unternehmen",
+        "companyUrl": null,
+        "name": "Name"
       },
       "testimonial-3": {
         "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
-        "role": "Rolle @ Unternehmen"
+        "role": "Rolle",
+        "company": "Unternehmen",
+        "companyUrl": null,
+        "name": "Name"
       }
     }
   },

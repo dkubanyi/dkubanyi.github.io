@@ -72,30 +72,82 @@
 }
 
 .lang-switch {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  position: relative;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
-.lang-option {
+.lang-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: none;
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: 6px;
   color: var(--text-muted);
   cursor: pointer;
-  padding: 2px 8px;
-  text-transform: uppercase;
+  padding: 4px 8px;
   transition: color 0.15s ease, border-color 0.15s ease;
 
   &:hover {
     color: var(--text);
   }
 
+  .flag {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .chevron {
+    font-size: 0.7rem;
+    transition: transform 0.15s ease;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 140px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  padding: 6px;
+  list-style: none;
+  z-index: 10;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 8px 10px;
+  text-align: left;
+  transition: color 0.15s ease, background-color 0.15s ease;
+
+  .flag {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  &:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.06);
+  }
+
   &.active {
     color: var(--accent);
-    border-color: var(--accent);
   }
 }
 
@@ -145,11 +197,11 @@
     flex-direction: column;
     background: var(--bg-alt);
     border-bottom: 1px solid var(--border);
-    padding: 16px 24px;
+    padding: 0 24px;
     gap: 16px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease;
+    transition: max-height 0.2s ease, padding 0.2s ease;
 
     &.open {
       max-height: 400px;
