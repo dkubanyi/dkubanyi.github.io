@@ -6,9 +6,9 @@ export const SKILL_GROUPS: SkillGroup[] = [
     skills: [
       { name: 'Java', icon: '/icons/java.svg' },
       { name: 'Kotlin', icon: '/icons/kotlin.svg' },
+      { name: 'C#', icon: '/icons/cs.svg' },
       { name: 'Go', icon: '/icons/go.svg' },
       { name: 'Rust', icon: '/icons/rust.svg' },
-      { name: 'C#', icon: '/icons/cs.svg' },
       { name: 'Spring', icon: '/icons/spring.svg' },
       { name: '.NET', icon: '/icons/dotnet.svg' },
     ],

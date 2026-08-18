@@ -24,7 +24,8 @@ export interface SkillGroup {
 export interface Project {
   id: string;
   tags: string[];
-  link?: string;
+  sourceUrl?: string;
+  liveUrl?: string;
   placeholder?: boolean;
 }
 

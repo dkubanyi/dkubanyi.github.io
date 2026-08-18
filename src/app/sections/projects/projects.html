@@ -16,9 +16,24 @@
               <span class="tag">{{ tag }}</span>
             }
           </div>
-          @if (project.link) {
-            <a class="project-link" [href]="project.link" target="_blank" rel="noopener">{{ 'projects.viewProject' | transloco }}</a>
-          }
+          <div class="project-actions">
+            <div class="project-action">
+              @if (project.sourceUrl) {
+                <a class="btn btn-secondary" [href]="project.sourceUrl" target="_blank" rel="noopener">{{ 'projects.sourceLabel' | transloco }}</a>
+              } @else {
+                <button type="button" class="btn btn-secondary" disabled [title]="unavailableReason(project.id, 'source')">{{ 'projects.sourceLabel' | transloco }}</button>
+                <span class="link-hint">{{ unavailableReason(project.id, 'source') }}</span>
+              }
+            </div>
+            <div class="project-action">
+              @if (project.liveUrl) {
+                <a class="btn btn-primary" [href]="project.liveUrl" target="_blank" rel="noopener">{{ 'projects.liveLabel' | transloco }}</a>
+              } @else {
+                <button type="button" class="btn btn-primary" disabled [title]="unavailableReason(project.id, 'live')">{{ 'projects.liveLabel' | transloco }}</button>
+                <span class="link-hint">{{ unavailableReason(project.id, 'live') }}</span>
+              }
+            </div>
+          </div>
         </div>
       }
     </div>

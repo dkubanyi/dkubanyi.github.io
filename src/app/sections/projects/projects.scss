@@ -35,8 +35,30 @@
   padding-top: 12px;
 }
 
-.project-link {
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 16px;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
+}
+
+.project-action {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+
+  &:hover {
+    transform: none;
+  }
+}
+
+.link-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
 }

@@ -91,7 +91,10 @@
   "projects": {
     "label": "projects",
     "title": "Selected work",
-    "viewProject": "View project →",
+    "sourceLabel": "Source",
+    "liveLabel": "Live Site",
+    "sourceUnavailableDefault": "Source not publicly available",
+    "liveUnavailableDefault": "Not deployed publicly",
     "entries": {
       "project-1": {
         "title": "Project Title",

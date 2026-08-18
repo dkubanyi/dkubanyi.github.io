@@ -1,6 +1,6 @@
 import { Project } from './types';
 
-// Placeholder entries — replace with real projects (id, tags, link).
+// Placeholder entries — replace with real projects (id, tags, sourceUrl, liveUrl).
 // Title/description text lives in public/assets/i18n/{en,de}.json under projects.entries.<id>.
 export const PROJECTS: Project[] = [
   {
