@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "links": {
+      "about": "Über mich",
+      "experience": "Erfahrung",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "testimonials": "Referenzen",
+      "contact": "Kontakt"
+    },
+    "toggleMenu": "Navigationsmenü umschalten"
+  },
+  "hero": {
+    "greeting": "Hallo, mein Name ist",
+    "tagline": "Ich baue verteilte Backend-Systeme",
+    "pitch": "Lead Senior Backend Engineer mit über 9 Jahren Produktionserfahrung in der Konzeption, Entwicklung und Skalierung ereignisgesteuerter Microservices, Hochdurchsatz-Datenpipelines und Cloud-nativer Systeme in <span class=\"hl\">Java</span>, <span class=\"hl\">Go</span>, <span class=\"hl\">Kotlin</span> und <span class=\"hl\">.NET</span>. Ansässig in Bratislava, Slowakei — verfügbar für langfristige B2B-Verträge.",
+    "ctaContact": "Kontakt aufnehmen",
+    "ctaGithub": "GitHub ansehen"
+  },
+  "about": {
+    "label": "über mich",
+    "title": "Wer ich bin",
+    "p1": "Ich bin ein Lead Senior Backend Engineer mit über 9 Jahren Produktionserfahrung in der Konzeption, Entwicklung und Skalierung ereignisgesteuerter Microservices, Hochdurchsatz-Datenverarbeitungspipelines und Cloud-nativer Systeme. Mein Schwerpunkt liegt auf Java, Go, Kotlin und C# .NET, gestützt durch fundierte Erfahrung mit Apache Kafka, Kubernetes, PostgreSQL und Docker.",
+    "p2": "Mein Kernfokus liegt auf robuster Backend-Architektur und verteilten Systemen, doch ich liefere regelmäßig auch Full-Stack-Funktionalität mit Angular — von contract-first RESTful Microservices mit OpenAPI/Swagger bis hin zu containerisierten, Cloud-nativen Deployments auf AWS und Azure.",
+    "p3": "Ich arbeite ausschließlich auf B2B-Vertragsbasis, mit einer starken Präferenz für langfristige Engagements, in denen ich mit einem Produkt und einem Team wachsen kann.",
+    "facts": {
+      "experience": { "label": "Erfahrung", "value": "9+ Jahre in Produktion" },
+      "engagement": { "label": "Auftragsart", "value": "B2B-Verträge, langfristig bevorzugt" },
+      "location": { "label": "Standort", "value": "Bratislava, Slowakei" },
+      "languages": { "label": "Sprachen", "value": "Tschechisch, Slowakisch (Muttersprache) · Englisch, Deutsch (verhandlungssicher)" },
+      "outsideOfWork": { "label": "Freizeit", "value": "Wandern und Lesen" }
+    }
+  },
+  "experience": {
+    "label": "erfahrung",
+    "title": "Wo ich gearbeitet habe",
+    "educationTitle": "Ausbildung",
+    "entries": {
+      "dalien": {
+        "role": "Senior Software Engineer",
+        "bullets": [
+          "Arbeite als unabhängiger B2B-Auftragnehmer und liefere Backend- und Full-Stack-Entwicklungsleistungen für Kunden in ganz Europa."
+        ]
+      },
+      "riwers": {
+        "role": "Software Engineer",
+        "bullets": [
+          "Entwickelte ein umfassendes Unternehmensverwaltungssystem für Zeiterfassung, automatisierte Rechnungsstellung und Integrationen mit externen Buchhaltungs-/HR-Systemen mit C# .NET, Angular, PostgreSQL und Docker.",
+          "Konzipierte und implementierte von Grund auf einen Echtzeit-Datenverarbeitungs-Workflow mit hohem Durchsatz auf Basis einer Microservices-Architektur mit Java, Spring Boot, Kafka Streams, Angular und PostgreSQL — verarbeitete ca. 500.000 Kafka-Nachrichten pro Stunde, wertete Daten externer Messstationen aus und versendete automatisierte Push-Benachrichtigungen. Migrierte das gesamte containerisierte Setup von Docker Swarm zu Kubernetes.",
+          "Entwickelte contract-first Integrations-Microservices und komplexe Fracht-/Preiskalkulationssysteme mit Go. Erstellte OpenAPI/Swagger-Spezifikationen, implementierte dynamische Logik zur Aggregation von Versandgewicht/-wert, containerisierte Services mit Docker und konfigurierte CI/CD-GitLab-Pipelines zur Azure Container Registry (ACR).",
+          "Leitete das architektonische Refactoring und die Modernisierung des Open-Source-ETL-Tools Gretl (v3-Release) und verbesserte dadurch signifikant Skalierbarkeit, Wartbarkeit und Codequalität.",
+          "Entwickelte Corporate-Brokerage-Tools für Schweizer M&A-Transaktionen. Konzipierte und betrieb AWS-Cloud-Infrastruktur (EC2, RDS, S3, ECS) für anpassbare SaaS-Plattformen.",
+          "Entwickelte Social-Media-Content-Aggregations- und Publishing-Engines mit OAuth2-Authentifizierung, eingebetteten Web-Widgets, URL-Weiterleitungsdiensten und ereignisgesteuerten RabbitMQ-Workflows."
+        ]
+      },
+      "total-avengers": {
+        "role": "Software Developer",
+        "bullets": [
+          "Entwickelte eine Backoffice-Lagerverwaltungsanwendung, integriert in eine bestehende E-Shop-Lösung, mit PDF- und CSV-Exporten aus einer PostgreSQL-Datenbank."
+        ]
+      },
+      "softsolutions": {
+        "role": "Java / JavaScript Developer",
+        "bullets": [
+          "Arbeitete an einer Kfz-Zulassungssoftware zur Verwaltung von Millionen Fahrzeugen in mehreren deutschen Bundesländern — Implementierung von Prozessabläufen, Datenvalidierung, Datenbank-Updates/-Migrationen und externe API-Integrationen."
+        ]
+      },
+      "tatra-banka": {
+        "role": "Corporate & Private Banking Trainee",
+        "bullets": [
+          "Unterstützung im Corporate-Vertrieb — individuelle Berichte, SQL (Oracle), Visual Basic for Applications."
+        ]
+      }
+    },
+    "education": {
+      "masters-finance": { "degree": "Master-Abschluss, Finanzwesen" },
+      "bachelors-economy": { "degree": "Bachelor-Abschluss, Volkswirtschaftslehre" }
+    }
+  },
+  "skills": {
+    "label": "fähigkeiten",
+    "title": "Technologien, mit denen ich arbeite",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Datenbanken",
+      "devops": "DevOps & Infrastruktur",
+      "architecture": "Architektur & Messaging"
+    }
+  },
+  "projects": {
+    "label": "projekte",
+    "title": "Ausgewählte Arbeiten",
+    "viewProject": "Projekt ansehen →",
+    "entries": {
+      "project-1": {
+        "title": "Projekttitel",
+        "description": "Kurze Beschreibung — durch echte Projektdetails und Links ersetzen."
+      },
+      "project-2": {
+        "title": "Weiteres Projekt",
+        "description": "Kurze Beschreibung — durch echte Projektdetails und Links ersetzen."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "referenzen",
+    "title": "Was andere sagen",
+    "entries": {
+      "testimonial-1": {
+        "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
+        "role": "Rolle @ Unternehmen"
+      },
+      "testimonial-2": {
+        "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
+        "role": "Rolle @ Unternehmen"
+      },
+      "testimonial-3": {
+        "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
+        "role": "Rolle @ Unternehmen"
+      }
+    }
+  },
+  "contact": {
+    "label": "kontakt",
+    "title": "Lass uns zusammenarbeiten",
+    "intro": "Ich bin derzeit offen für neue langfristige B2B-Verträge. Ob Sie ein verteiltes System aufbauen, skalieren oder modernisieren möchten — kontaktieren Sie mich gerne.",
+    "mailLabel": "E-Mail:",
+    "location": "📍 Bratislava, Slowakei"
+  },
+  "common": {
+    "placeholder": "Platzhalter"
+  },
+  "footer": {
+    "copyright": "© {{year}} Daniel Kubányi"
+  }
+}

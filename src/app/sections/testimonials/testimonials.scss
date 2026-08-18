@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.testimonial {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  &.placeholder {
+    border-style: dashed;
+  }
+}
+
+.placeholder-tag {
+  align-self: flex-start;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  background: transparent;
+  border-color: var(--border);
+}
+
+.quote {
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-name {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.quote-role {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

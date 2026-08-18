@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+
+  &.placeholder {
+    border-style: dashed;
+  }
+}
+
+.placeholder-tag {
+  align-self: flex-start;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  background: transparent;
+  border-color: var(--border);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.project-link {
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}

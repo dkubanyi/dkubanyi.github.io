@@ -1,0 +1,21 @@
+<section class="section" id="testimonials">
+  <div class="container">
+    <span class="section-label">{{ 'testimonials.label' | transloco }}</span>
+    <h2 class="section-title">{{ 'testimonials.title' | transloco }}</h2>
+
+    <div class="grid">
+      @for (t of testimonials; track t.id) {
+        <blockquote class="card testimonial" [class.placeholder]="t.placeholder">
+          @if (t.placeholder) {
+            <span class="tag placeholder-tag">{{ 'common.placeholder' | transloco }}</span>
+          }
+          <p class="quote">“{{ 'testimonials.entries.' + t.id + '.quote' | transloco }}”</p>
+          <footer>
+            <span class="quote-name">{{ t.name }}</span>
+            <span class="quote-role">{{ 'testimonials.entries.' + t.id + '.role' | transloco }}</span>
+          </footer>
+        </blockquote>
+      }
+    </div>
+  </div>
+</section>

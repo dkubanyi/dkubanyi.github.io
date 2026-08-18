@@ -1,0 +1,42 @@
+<section class="section" id="experience">
+  <div class="container">
+    <span class="section-label">{{ 'experience.label' | transloco }}</span>
+    <h2 class="section-title">{{ 'experience.title' | transloco }}</h2>
+
+    <ol class="timeline">
+      @for (job of experience; track job.id) {
+        <li class="entry">
+          <div class="entry-marker"></div>
+          <div class="entry-body">
+            <div class="entry-head">
+              <h3>{{ 'experience.entries.' + job.id + '.role' | transloco }} · {{ job.company }}</h3>
+              <span class="period">{{ job.period }}</span>
+            </div>
+            @if (job.location) {
+              <p class="location">{{ job.location }}</p>
+            }
+            @if (('experience.entries.' + job.id + '.bullets' | transloco); as bullets) {
+              @if (bullets.length) {
+                <ul class="bullets">
+                  @for (bullet of bullets; track bullet) {
+                    <li>{{ bullet }}</li>
+                  }
+                </ul>
+              }
+            }
+          </div>
+        </li>
+      }
+    </ol>
+
+    <div class="education">
+      <h3>{{ 'experience.educationTitle' | transloco }}</h3>
+      @for (edu of education; track edu.id) {
+        <p class="edu-entry">
+          <span class="degree">{{ 'experience.education.' + edu.id + '.degree' | transloco }}</span> — {{ edu.school }}
+          <span class="year">({{ edu.year }})</span>
+        </p>
+      }
+    </div>
+  </div>
+</section>

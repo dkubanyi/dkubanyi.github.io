@@ -1,0 +1,48 @@
+.hero {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.08), transparent 40%),
+    radial-gradient(circle at 85% 60%, rgba(125, 211, 252, 0.07), transparent 40%);
+}
+
+.hero-inner {
+  max-width: 760px;
+}
+
+.greeting {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.name {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.tagline {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.pitch {
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin-bottom: 36px;
+
+  .hl {
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-weight: 500;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}

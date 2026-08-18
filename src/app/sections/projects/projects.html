@@ -1,0 +1,26 @@
+<section class="section" id="projects">
+  <div class="container">
+    <span class="section-label">{{ 'projects.label' | transloco }}</span>
+    <h2 class="section-title">{{ 'projects.title' | transloco }}</h2>
+
+    <div class="grid">
+      @for (project of projects; track project.id) {
+        <div class="card project" [class.placeholder]="project.placeholder">
+          @if (project.placeholder) {
+            <span class="tag placeholder-tag">{{ 'common.placeholder' | transloco }}</span>
+          }
+          <h3>{{ 'projects.entries.' + project.id + '.title' | transloco }}</h3>
+          <p>{{ 'projects.entries.' + project.id + '.description' | transloco }}</p>
+          <div class="tags">
+            @for (tag of project.tags; track tag) {
+              <span class="tag">{{ tag }}</span>
+            }
+          </div>
+          @if (project.link) {
+            <a class="project-link" [href]="project.link" target="_blank" rel="noopener">{{ 'projects.viewProject' | transloco }}</a>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>

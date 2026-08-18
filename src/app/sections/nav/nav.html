@@ -1,0 +1,39 @@
+<header class="nav">
+  <div class="nav-inner container">
+    <a class="brand" href="#" (click)="closeMenu()">
+      <span class="logo-mark">&gt;_</span>
+      <span class="brand-name">dkubanyi</span>
+    </a>
+
+    <nav class="links" [class.open]="menuOpen()">
+      @for (link of links; track link.id) {
+        <a [href]="link.href" (click)="closeMenu()">{{ 'nav.links.' + link.id | transloco }}</a>
+      }
+    </nav>
+
+    <div class="lang-switch">
+      @for (lang of availableLangs; track lang) {
+        <button
+          type="button"
+          class="lang-option"
+          [class.active]="language.activeLang() === lang"
+          (click)="setLanguage(lang)"
+        >
+          {{ lang }}
+        </button>
+      }
+    </div>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      [class.open]="menuOpen()"
+      (click)="toggleMenu()"
+      [attr.aria-label]="'nav.toggleMenu' | transloco"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

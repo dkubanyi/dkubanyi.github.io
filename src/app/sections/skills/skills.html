@@ -1,0 +1,24 @@
+<section class="section" id="skills">
+  <div class="container">
+    <span class="section-label">{{ 'skills.label' | transloco }}</span>
+    <h2 class="section-title">{{ 'skills.title' | transloco }}</h2>
+
+    <div class="groups">
+      @for (group of groups; track group.id) {
+        <div class="group">
+          <h3>{{ 'skills.groups.' + group.id | transloco }}</h3>
+          <div class="chips">
+            @for (skill of group.skills; track skill.name) {
+              <span class="chip">
+                @if (skill.icon) {
+                  <img [src]="skill.icon" [alt]="skill.name" width="18" height="18" loading="lazy" />
+                }
+                {{ skill.name }}
+              </span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
