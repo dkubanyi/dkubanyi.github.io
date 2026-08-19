@@ -9,15 +9,15 @@
           @if (t.placeholder) {
             <span class="tag placeholder-tag">{{ 'common.placeholder' | transloco }}</span>
           }
-          <p class="quote">“{{ 'testimonials.entries.' + t.id + '.quote' | transloco }}”</p>
+          <p class="quote">“{{ t.quote }}”</p>
           <footer>
-            <span class="quote-name">{{ 'testimonials.entries.' + t.id + '.name' | transloco }}</span>
+            <span class="quote-name">{{ t.name }}</span>
             <span class="quote-role">
-              {{ 'testimonials.entries.' + t.id + '.role' | transloco }}<span>&nbsp;&#64;&nbsp;</span>
-              @if (companyUrl(t.id); as companyUrl) {
-                <a class="quote-company" [href]="companyUrl" target="_blank" rel="noopener">{{ 'testimonials.entries.' + t.id + '.company' | transloco }}</a>
+              {{ t.role }}<span>&nbsp;&#64;&nbsp;</span>
+              @if (t.companyUrl) {
+                <a class="quote-company" [href]="t.companyUrl" target="_blank" rel="noopener">{{ t.company }}</a>
               } @else {
-                <span class="quote-company">{{ 'testimonials.entries.' + t.id + '.company' | transloco }}</span>
+                <span class="quote-company">{{ t.company }}</span>
               }
             </span>
           </footer>

@@ -6,7 +6,7 @@
     <div class="groups">
       @for (group of groups; track group.id) {
         <div class="group">
-          <h3>{{ 'skills.groups.' + group.id | transloco }}</h3>
+          <h3>{{ group.label }}</h3>
           <div class="chips">
             @for (skill of group.skills; track skill.name) {
               <span class="chip">

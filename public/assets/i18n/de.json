@@ -35,15 +35,23 @@
     "label": "erfahrung",
     "title": "Wo ich gearbeitet habe",
     "educationTitle": "Ausbildung",
-    "entries": {
-      "dalien": {
+    "entries": [
+      {
+        "id": "dalien",
+        "company": "Dalien s.r.o.",
         "role": "Senior Software Engineer",
+        "period": "März 2022 — Heute",
+        "location": "Bratislava, Slowakei",
         "bullets": [
           "Arbeite als unabhängiger B2B-Auftragnehmer und liefere Backend- und Full-Stack-Entwicklungsleistungen für Kunden in ganz Europa."
         ]
       },
-      "riwers": {
+      {
+        "id": "riwers",
+        "company": "riwers",
         "role": "Software Engineer",
+        "period": "Januar 2020 — Heute",
+        "location": "Bern, Schweiz",
         "bullets": [
           "Entwickelte ein umfassendes Unternehmensverwaltungssystem für Zeiterfassung, automatisierte Rechnungsstellung und Integrationen mit externen Buchhaltungs-/HR-Systemen mit C# .NET, Angular, PostgreSQL und Docker.",
           "Konzipierte und implementierte von Grund auf einen Echtzeit-Datenverarbeitungs-Workflow mit hohem Durchsatz auf Basis einer Microservices-Architektur mit Java, Spring Boot, Kafka Streams, Angular und PostgreSQL — verarbeitete ca. 500.000 Kafka-Nachrichten pro Stunde, wertete Daten externer Messstationen aus und versendete automatisierte Push-Benachrichtigungen. Migrierte das gesamte containerisierte Setup von Docker Swarm zu Kubernetes.",
@@ -53,40 +61,111 @@
           "Entwickelte Social-Media-Content-Aggregations- und Publishing-Engines mit OAuth2-Authentifizierung, eingebetteten Web-Widgets, URL-Weiterleitungsdiensten und ereignisgesteuerten RabbitMQ-Workflows."
         ]
       },
-      "total-avengers": {
+      {
+        "id": "total-avengers",
+        "company": "Total Avengers",
         "role": "Software Developer",
+        "period": "März 2019 — Dezember 2019",
+        "location": "Slowakei",
         "bullets": [
           "Entwickelte eine Backoffice-Lagerverwaltungsanwendung, integriert in eine bestehende E-Shop-Lösung, mit PDF- und CSV-Exporten aus einer PostgreSQL-Datenbank."
         ]
       },
-      "softsolutions": {
+      {
+        "id": "softsolutions",
+        "company": "SoftSolutions, s.r.o.",
         "role": "Java / JavaScript Developer",
+        "period": "Juli 2017 — März 2019",
+        "location": "Bratislava, Slowakei",
         "bullets": [
           "Arbeitete an einer Kfz-Zulassungssoftware zur Verwaltung von Millionen Fahrzeugen in mehreren deutschen Bundesländern — Implementierung von Prozessabläufen, Datenvalidierung, Datenbank-Updates/-Migrationen und externe API-Integrationen."
         ]
       },
-      "tatra-banka": {
+      {
+        "id": "tatra-banka",
+        "company": "Tatra banka",
         "role": "Corporate & Private Banking Trainee",
+        "period": "Oktober 2016 — Februar 2017",
+        "location": "Bratislava, Slowakei",
         "bullets": [
           "Unterstützung im Corporate-Vertrieb — individuelle Berichte, SQL (Oracle), Visual Basic for Applications."
         ]
       }
-    },
-    "education": {
-      "masters-finance": { "degree": "Master-Abschluss, Finanzwesen" },
-      "bachelors-economy": { "degree": "Bachelor-Abschluss, Volkswirtschaftslehre" }
-    }
+    ],
+    "education": [
+      {
+        "id": "masters-finance",
+        "school": "Ekonomická univerzita v Bratislave",
+        "degree": "Master-Abschluss, Finanzwesen",
+        "year": "2017"
+      },
+      {
+        "id": "bachelors-economy",
+        "school": "Ekonomická univerzita v Bratislave",
+        "degree": "Bachelor-Abschluss, Volkswirtschaftslehre",
+        "year": "2015"
+      }
+    ]
   },
   "skills": {
     "label": "fähigkeiten",
     "title": "Technologien, mit denen ich arbeite",
-    "groups": {
-      "backend": "Backend",
-      "frontend": "Frontend",
-      "databases": "Datenbanken",
-      "devops": "DevOps & Infrastruktur",
-      "architecture": "Architektur & Messaging"
-    }
+    "groups": [
+      {
+        "id": "backend",
+        "label": "Backend",
+        "skills": [
+          { "name": "Java", "icon": "/icons/java.svg" },
+          { "name": "Kotlin", "icon": "/icons/kotlin.svg" },
+          { "name": "C#", "icon": "/icons/cs.svg" },
+          { "name": "Go", "icon": "/icons/go.svg" },
+          { "name": "Rust", "icon": "/icons/rust.svg" },
+          { "name": "Spring", "icon": "/icons/spring.svg" },
+          { "name": ".NET", "icon": "/icons/dotnet.svg" }
+        ]
+      },
+      {
+        "id": "frontend",
+        "label": "Frontend",
+        "skills": [
+          { "name": "TypeScript", "icon": "/icons/typescript.svg" },
+          { "name": "Angular", "icon": "/icons/angular.svg" },
+          { "name": "CSS", "icon": "/icons/css.svg" },
+          { "name": "SCSS", "icon": "/icons/scss.svg" }
+        ]
+      },
+      {
+        "id": "databases",
+        "label": "Datenbanken",
+        "skills": [
+          { "name": "PostgreSQL", "icon": "/icons/postgres.svg" },
+          { "name": "SQLite", "icon": "/icons/sqlite.svg" },
+          { "name": "Redis", "icon": "/icons/redis.svg" },
+          { "name": "MongoDB", "icon": "/icons/mongodb.svg" }
+        ]
+      },
+      {
+        "id": "devops",
+        "label": "DevOps & Infrastruktur",
+        "skills": [
+          { "name": "Docker", "icon": "/icons/docker.svg" },
+          { "name": "Kubernetes", "icon": "/icons/kubernetes.svg" },
+          { "name": "AWS" },
+          { "name": "Azure" }
+        ]
+      },
+      {
+        "id": "architecture",
+        "label": "Architektur & Messaging",
+        "skills": [
+          { "name": "Apache Kafka" },
+          { "name": "Kafka Streams" },
+          { "name": "RabbitMQ" },
+          { "name": "OpenAPI / Swagger" },
+          { "name": "Event-Driven Microservices" }
+        ]
+      }
+    ]
   },
   "projects": {
     "label": "projekte",
@@ -95,43 +174,54 @@
     "liveLabel": "Live-Seite",
     "sourceUnavailableDefault": "Quellcode nicht öffentlich verfügbar",
     "liveUnavailableDefault": "Nicht öffentlich bereitgestellt",
-    "entries": {
-      "project-1": {
+    "entries": [
+      {
+        "id": "project-1",
         "title": "Projekttitel",
-        "description": "Kurze Beschreibung — durch echte Projektdetails und Links ersetzen."
+        "description": "Kurze Beschreibung — durch echte Projektdetails und Links ersetzen.",
+        "tags": ["Tag one", "Tag two"],
+        "placeholder": true
       },
-      "project-2": {
+      {
+        "id": "project-2",
         "title": "Weiteres Projekt",
-        "description": "Kurze Beschreibung — durch echte Projektdetails und Links ersetzen."
+        "description": "Kurze Beschreibung — durch echte Projektdetails und Links ersetzen.",
+        "tags": ["Tag one", "Tag two"],
+        "placeholder": true
       }
-    }
+    ]
   },
   "testimonials": {
     "label": "referenzen",
     "title": "Was andere sagen",
-    "entries": {
-      "testimonial-1": {
+    "entries": [
+      {
+        "id": "testimonial-1",
         "quote": "Daniel ist ein großartiger Mitwirkender bei der Entwicklung der GIN-Anwendung. Mit seinem Wissen in Java, Spring Boot, Angular, Docker/Kubernetes und PostgreSQL hat er die Anwendung um neue Funktionen bereichert. Als geschätzter Teamplayer ist er sehr unterstützend und bemüht sich stets, die Softwarequalität auf hohem Niveau zu halten.",
-        "role": "Project Manager",
+        "role": "Projektleiter",
         "company": "EBP",
         "companyUrl": "https://www.ebp.global/ch-de",
         "name": "Christoph Graf"
       },
-      "testimonial-2": {
+      {
+        "id": "testimonial-2",
         "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
         "role": "Rolle",
         "company": "Unternehmen",
         "companyUrl": null,
-        "name": "Name"
+        "name": "Name",
+        "placeholder": true
       },
-      "testimonial-3": {
+      {
+        "id": "testimonial-3",
         "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
         "role": "Rolle",
         "company": "Unternehmen",
         "companyUrl": null,
-        "name": "Name"
+        "name": "Name",
+        "placeholder": true
       }
-    }
+    ]
   },
   "contact": {
     "label": "kontakt",

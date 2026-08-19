@@ -1,6 +1,17 @@
 import { Component, inject } from '@angular/core';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
-import { PROJECTS } from '../../data/projects';
+
+interface ProjectEntry {
+  id: string;
+  title: string;
+  description: string;
+  tags: string[];
+  sourceUrl?: string;
+  liveUrl?: string;
+  placeholder?: boolean;
+  sourceUnavailableReason?: string;
+  liveUnavailableReason?: string;
+}
 
 @Component({
   selector: 'app-projects',
@@ -10,15 +21,14 @@ import { PROJECTS } from '../../data/projects';
 })
 export class Projects {
   private readonly transloco = inject(TranslocoService);
-  protected readonly projects = PROJECTS;
 
-  // Reads the raw translation value directly rather than the `transloco` pipe (see the
-  // testimonials companyUrl fix) so a missing per-project reason falls back cleanly to the
-  // generic default instead of Transloco's own missing-key fallback (the raw key path string).
-  protected unavailableReason(id: string, kind: 'source' | 'live'): string {
-    const translation = this.transloco.getTranslation(this.transloco.getActiveLang());
-    const reasonKey = kind === 'source' ? 'sourceUnavailableReason' : 'liveUnavailableReason';
+  protected get projects(): ProjectEntry[] {
+    return this.transloco.translate<ProjectEntry[]>('projects.entries');
+  }
+
+  protected unavailableReason(project: ProjectEntry, kind: 'source' | 'live'): string {
+    const reason = kind === 'source' ? project.sourceUnavailableReason : project.liveUnavailableReason;
     const defaultKey = kind === 'source' ? 'projects.sourceUnavailableDefault' : 'projects.liveUnavailableDefault';
-    return translation[`projects.entries.${id}.${reasonKey}`] ?? translation[defaultKey];
+    return reason ?? this.transloco.translate(defaultKey);
   }
 }

@@ -35,15 +35,23 @@
     "label": "experience",
     "title": "Where I've worked",
     "educationTitle": "Education",
-    "entries": {
-      "dalien": {
+    "entries": [
+      {
+        "id": "dalien",
+        "company": "Dalien s.r.o.",
         "role": "Senior Software Engineer",
+        "period": "March 2022 — Present",
+        "location": "Bratislava, Slovakia",
         "bullets": [
           "Operate as an independent B2B contractor, delivering backend and full-stack engagement work for clients across Europe."
         ]
       },
-      "riwers": {
+      {
+        "id": "riwers",
+        "company": "riwers",
         "role": "Software Engineer",
+        "period": "January 2020 — Present",
+        "location": "Berne, Switzerland",
         "bullets": [
           "Built a full-featured enterprise management system handling employee time-tracking, automated invoicing, and third-party accounting/HR integrations using C# .NET, Angular, PostgreSQL, and Docker.",
           "Designed and implemented a high-throughput, real-time data processing workflow from scratch using a microservices architecture built on Java, Spring Boot, Kafka Streams, Angular, and PostgreSQL — handling ~500k Kafka messages per hour, evaluating data from external measuring stations and dispatching automated push notifications. Migrated the entire containerized setup from Docker Swarm to Kubernetes.",
@@ -53,40 +61,111 @@
           "Developed social media content aggregation and publishing engines featuring OAuth2 authentication, embedded web widgets, URL redirect services, and RabbitMQ event-driven workflows."
         ]
       },
-      "total-avengers": {
+      {
+        "id": "total-avengers",
+        "company": "Total Avengers",
         "role": "Software Developer",
+        "period": "March 2019 — December 2019",
+        "location": "Slovakia",
         "bullets": [
           "Developed a back-office warehouse management application integrated with an existing e-shop solution, generating PDF and CSV exports from a PostgreSQL database."
         ]
       },
-      "softsolutions": {
+      {
+        "id": "softsolutions",
+        "company": "SoftSolutions, s.r.o.",
         "role": "Java / JavaScript Developer",
+        "period": "July 2017 — March 2019",
+        "location": "Bratislava, Slovakia",
         "bullets": [
           "Worked on motor vehicle registration software managing millions of vehicles across several German federal states — process workflow implementation, data validation, database updates/migrations, and external API integrations."
         ]
       },
-      "tatra-banka": {
+      {
+        "id": "tatra-banka",
+        "company": "Tatra banka",
         "role": "Corporate & Private Banking Trainee",
+        "period": "October 2016 — February 2017",
+        "location": "Bratislava, Slovakia",
         "bullets": [
           "Corporate sales support — custom reports, SQL (Oracle), Visual Basic for Applications."
         ]
       }
-    },
-    "education": {
-      "masters-finance": { "degree": "Master's Degree, Finance" },
-      "bachelors-economy": { "degree": "Bachelor's Degree, National Economy" }
-    }
+    ],
+    "education": [
+      {
+        "id": "masters-finance",
+        "school": "Ekonomická univerzita v Bratislave",
+        "degree": "Master's Degree, Finance",
+        "year": "2017"
+      },
+      {
+        "id": "bachelors-economy",
+        "school": "Ekonomická univerzita v Bratislave",
+        "degree": "Bachelor's Degree, National Economy",
+        "year": "2015"
+      }
+    ]
   },
   "skills": {
     "label": "skills",
     "title": "Technologies I work with",
-    "groups": {
-      "backend": "Backend",
-      "frontend": "Frontend",
-      "databases": "Databases",
-      "devops": "DevOps & Infrastructure",
-      "architecture": "Architecture & Messaging"
-    }
+    "groups": [
+      {
+        "id": "backend",
+        "label": "Backend",
+        "skills": [
+          { "name": "Java", "icon": "/icons/java.svg" },
+          { "name": "Kotlin", "icon": "/icons/kotlin.svg" },
+          { "name": "C#", "icon": "/icons/cs.svg" },
+          { "name": "Go", "icon": "/icons/go.svg" },
+          { "name": "Rust", "icon": "/icons/rust.svg" },
+          { "name": "Spring", "icon": "/icons/spring.svg" },
+          { "name": ".NET", "icon": "/icons/dotnet.svg" }
+        ]
+      },
+      {
+        "id": "frontend",
+        "label": "Frontend",
+        "skills": [
+          { "name": "TypeScript", "icon": "/icons/typescript.svg" },
+          { "name": "Angular", "icon": "/icons/angular.svg" },
+          { "name": "CSS", "icon": "/icons/css.svg" },
+          { "name": "SCSS", "icon": "/icons/scss.svg" }
+        ]
+      },
+      {
+        "id": "databases",
+        "label": "Databases",
+        "skills": [
+          { "name": "PostgreSQL", "icon": "/icons/postgres.svg" },
+          { "name": "SQLite", "icon": "/icons/sqlite.svg" },
+          { "name": "Redis", "icon": "/icons/redis.svg" },
+          { "name": "MongoDB", "icon": "/icons/mongodb.svg" }
+        ]
+      },
+      {
+        "id": "devops",
+        "label": "DevOps & Infrastructure",
+        "skills": [
+          { "name": "Docker", "icon": "/icons/docker.svg" },
+          { "name": "Kubernetes", "icon": "/icons/kubernetes.svg" },
+          { "name": "AWS" },
+          { "name": "Azure" }
+        ]
+      },
+      {
+        "id": "architecture",
+        "label": "Architecture & Messaging",
+        "skills": [
+          { "name": "Apache Kafka" },
+          { "name": "Kafka Streams" },
+          { "name": "RabbitMQ" },
+          { "name": "OpenAPI / Swagger" },
+          { "name": "Event-Driven Microservices" }
+        ]
+      }
+    ]
   },
   "projects": {
     "label": "projects",
@@ -95,43 +174,54 @@
     "liveLabel": "Live Site",
     "sourceUnavailableDefault": "Source not publicly available",
     "liveUnavailableDefault": "Not deployed publicly",
-    "entries": {
-      "project-1": {
+    "entries": [
+      {
+        "id": "project-1",
         "title": "Project Title",
-        "description": "Short description — replace with your real project details and links."
+        "description": "Short description — replace with your real project details and links.",
+        "tags": ["Tag one", "Tag two"],
+        "placeholder": true
       },
-      "project-2": {
+      {
+        "id": "project-2",
         "title": "Another Project",
-        "description": "Short description — replace with your real project details and links."
+        "description": "Short description — replace with your real project details and links.",
+        "tags": ["Tag one", "Tag two"],
+        "placeholder": true
       }
-    }
+    ]
   },
   "testimonials": {
     "label": "testimonials",
     "title": "What people say",
-    "entries": {
-      "testimonial-1": {
+    "entries": [
+      {
+        "id": "testimonial-1",
         "quote": "Daniel is a great contributor to the development of the GIN application. With his knowledge in Java, Spring Boot, Angular, Docker/Kubernetes and PostgreSQL he enriched the application with new features. As a valued team player, he is very supportive and strives to keep the software quality on a high level.",
         "role": "Project Manager",
         "company": "EBP",
         "companyUrl": "https://www.ebp.global/ch-de",
         "name": "Christoph Graf"
       },
-      "testimonial-2": {
+      {
+        "id": "testimonial-2",
         "quote": "Placeholder — replace with a real quote about working with Daniel.",
         "role": "Role",
         "company": "Company",
         "companyUrl": null,
-        "name": "Name"
+        "name": "Name",
+        "placeholder": true
       },
-      "testimonial-3": {
+      {
+        "id": "testimonial-3",
         "quote": "Placeholder — replace with a real quote about working with Daniel.",
         "role": "Role",
         "company": "Company",
         "companyUrl": null,
-        "name": "Name"
+        "name": "Name",
+        "placeholder": true
       }
-    }
+    ]
   },
   "contact": {
     "label": "contact",

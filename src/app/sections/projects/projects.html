@@ -9,8 +9,8 @@
           @if (project.placeholder) {
             <span class="tag placeholder-tag">{{ 'common.placeholder' | transloco }}</span>
           }
-          <h3>{{ 'projects.entries.' + project.id + '.title' | transloco }}</h3>
-          <p>{{ 'projects.entries.' + project.id + '.description' | transloco }}</p>
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
           <div class="tags">
             @for (tag of project.tags; track tag) {
               <span class="tag">{{ tag }}</span>
@@ -21,16 +21,16 @@
               @if (project.sourceUrl) {
                 <a class="btn btn-secondary" [href]="project.sourceUrl" target="_blank" rel="noopener">{{ 'projects.sourceLabel' | transloco }}</a>
               } @else {
-                <button type="button" class="btn btn-secondary" disabled [title]="unavailableReason(project.id, 'source')">{{ 'projects.sourceLabel' | transloco }}</button>
-                <span class="link-hint">{{ unavailableReason(project.id, 'source') }}</span>
+                <button type="button" class="btn btn-secondary" disabled [title]="unavailableReason(project, 'source')">{{ 'projects.sourceLabel' | transloco }}</button>
+                <span class="link-hint">{{ unavailableReason(project, 'source') }}</span>
               }
             </div>
             <div class="project-action">
               @if (project.liveUrl) {
                 <a class="btn btn-primary" [href]="project.liveUrl" target="_blank" rel="noopener">{{ 'projects.liveLabel' | transloco }}</a>
               } @else {
-                <button type="button" class="btn btn-primary" disabled [title]="unavailableReason(project.id, 'live')">{{ 'projects.liveLabel' | transloco }}</button>
-                <span class="link-hint">{{ unavailableReason(project.id, 'live') }}</span>
+                <button type="button" class="btn btn-primary" disabled [title]="unavailableReason(project, 'live')">{{ 'projects.liveLabel' | transloco }}</button>
+                <span class="link-hint">{{ unavailableReason(project, 'live') }}</span>
               }
             </div>
           </div>

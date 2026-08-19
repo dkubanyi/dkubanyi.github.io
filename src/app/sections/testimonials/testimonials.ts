@@ -1,6 +1,15 @@
 import { Component, inject } from '@angular/core';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
-import { TESTIMONIALS } from '../../data/testimonials';
+
+interface TestimonialEntry {
+  id: string;
+  quote: string;
+  role: string;
+  company: string;
+  companyUrl: string | null;
+  name: string;
+  placeholder?: boolean;
+}
 
 @Component({
   selector: 'app-testimonials',
@@ -10,13 +19,8 @@ import { TESTIMONIALS } from '../../data/testimonials';
 })
 export class Testimonials {
   private readonly transloco = inject(TranslocoService);
-  protected readonly testimonials = TESTIMONIALS;
 
-  // Reads the raw translation value directly instead of the `transloco` pipe/`translate()`,
-  // which treats any falsy value (null, '') as a *missing* key and returns a truthy fallback —
-  // that would make the link render unconditionally regardless of whether a URL was set.
-  protected companyUrl(id: string): string | null {
-    const translation = this.transloco.getTranslation(this.transloco.getActiveLang());
-    return translation[`testimonials.entries.${id}.companyUrl`] ?? null;
+  protected get testimonials(): TestimonialEntry[] {
+    return this.transloco.translate<TestimonialEntry[]>('testimonials.entries');
   }
 }
