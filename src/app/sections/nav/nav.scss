@@ -71,6 +71,12 @@
   }
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .lang-switch {
   position: relative;
   font-family: var(--font-mono);
