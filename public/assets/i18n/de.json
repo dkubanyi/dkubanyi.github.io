@@ -150,8 +150,8 @@
         "skills": [
           { "name": "Docker", "icon": "/icons/docker.svg" },
           { "name": "Kubernetes", "icon": "/icons/kubernetes.svg" },
-          { "name": "AWS" },
-          { "name": "Azure" }
+          { "name": "AWS", "icon": "/icons/aws.svg" },
+          { "name": "Azure", "icon": "/icons/azure.svg" }
         ]
       },
       {

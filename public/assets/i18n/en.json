@@ -27,7 +27,7 @@
       "experience": { "label": "Experience", "value": "9+ years in production" },
       "engagement": { "label": "Engagement", "value": "B2B contracts, long-term preferred" },
       "location": { "label": "Location", "value": "Bratislava, Slovakia" },
-      "languages": { "label": "Languages", "value": "Slovak, Czech (native) · English, German (professional)" },
+      "languages": { "label": "Languages", "value": "Slovak, Czech (native); English, German (professional)" },
       "outsideOfWork": { "label": "Outside of work", "value": "Hiking and reading" }
     }
   },
@@ -78,7 +78,7 @@
         "period": "July 2017 — March 2019",
         "location": "Bratislava, Slovakia",
         "bullets": [
-          "Worked on motor vehicle registration software managing millions of vehicles across several German federal states — process workflow implementation, data validation, database updates/migrations, and external API integrations."
+          "Worked on motor vehicle registration software (KFZ) managing millions of vehicles across several German federal states — process workflow implementation, data validation, database updates/migrations, and external API integrations."
         ]
       },
       {
@@ -150,8 +150,8 @@
         "skills": [
           { "name": "Docker", "icon": "/icons/docker.svg" },
           { "name": "Kubernetes", "icon": "/icons/kubernetes.svg" },
-          { "name": "AWS" },
-          { "name": "Azure" }
+          { "name": "AWS", "icon": "/icons/aws.svg" },
+          { "name": "Azure", "icon": "/icons/azure.svg" }
         ]
       },
       {
