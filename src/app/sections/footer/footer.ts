@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import {NgOptimizedImage} from '@angular/common';
 
@@ -6,6 +6,7 @@ import {NgOptimizedImage} from '@angular/common';
   selector: 'app-footer',
   imports: [TranslocoPipe, NgOptimizedImage],
   templateUrl: './footer.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './footer.scss',
 })
 export class Footer {

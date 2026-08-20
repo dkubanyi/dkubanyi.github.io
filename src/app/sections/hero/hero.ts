@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { START_YEAR } from '../../core/constants';
 
@@ -6,6 +6,7 @@ import { START_YEAR } from '../../core/constants';
   selector: 'app-hero',
   imports: [TranslocoPipe],
   templateUrl: './hero.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './hero.scss',
 })
 export class Hero {

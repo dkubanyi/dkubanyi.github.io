@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 
 interface ProjectEntry {
@@ -17,6 +17,7 @@ interface ProjectEntry {
   selector: 'app-projects',
   imports: [TranslocoPipe],
   templateUrl: './projects.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './projects.scss',
 })
 export class Projects {

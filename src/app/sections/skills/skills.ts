@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 import {NgOptimizedImage} from '@angular/common';
 
@@ -17,6 +17,7 @@ interface SkillGroup {
   selector: 'app-skills',
   imports: [TranslocoPipe, NgOptimizedImage],
   templateUrl: './skills.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './skills.scss',
 })
 export class Skills {

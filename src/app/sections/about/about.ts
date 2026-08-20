@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { START_YEAR } from '../../core/constants';
 
@@ -10,6 +10,7 @@ interface QuickFact {
   selector: 'app-about',
   imports: [TranslocoPipe],
   templateUrl: './about.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './about.scss',
 })
 export class About {
