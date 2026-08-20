@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "links": {
+      "about": "About",
+      "experience": "Experience",
+      "skills": "Skills",
+      "projects": "Projects",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    },
+    "toggleMenu": "Toggle navigation menu"
+  },
+  "hero": {
+    "greeting": "Hi, I am",
+    "tagline": "I build distributed backend systems",
+    "pitch": "Lead Senior Backend Engineer with {{year}}+ years of production experience designing, building and scaling event-driven microservices, high-throughput data pipelines, and cloud-native systems in <span class=\"hl\">Java</span>, <span class=\"hl\">Go</span>, <span class=\"hl\">Kotlin</span> and <span class=\"hl\">.NET</span>. Based in Bratislava, Slovakia — available for long-term B2B contracts.",
+    "ctaContact": "Get in touch",
+    "ctaGithub": "View GitHub"
+  },
+  "about": {
+    "label": "about",
+    "title": "Who I am",
+    "p1": "I'm a lead senior backend engineer with {{year}}+ years of production experience designing, building and scaling event-driven microservices, high-throughput data processing pipelines, and cloud-native systems. My primary expertise lies in Java, Go, Kotlin and C# .NET, backed by deep experience with Apache Kafka, Kubernetes, PostgreSQL and Docker.",
+    "p2": "While my core focus is robust backend architecture and distributed systems, I regularly deliver full-stack functionality using Angular — from contract-first RESTful microservices with OpenAPI/Swagger to containerized, cloud-native deployments across AWS and Azure.",
+    "p3": "I work exclusively on B2B contracts, with a strong preference for long-term engagements where I can grow with a product and a team.",
+    "facts": {
+      "experience": { "label": "Experience", "value": "9+ years in production" },
+      "engagement": { "label": "Engagement", "value": "B2B contracts, long-term preferred" },
+      "location": { "label": "Location", "value": "Bratislava, Slovakia" },
+      "languages": { "label": "Languages", "value": "Slovak, Czech (native); English, German (professional)" },
+      "outsideOfWork": { "label": "Outside of work", "value": "Hiking and reading" }
+    }
+  },
+  "experience": {
+    "label": "experience",
+    "title": "Where I've worked",
+    "educationTitle": "Education",
+    "entries": [
+      {
+        "id": "dalien",
+        "company": "Dalien s.r.o.",
+        "role": "Senior Software Engineer",
+        "period": "March 2022 — Present",
+        "location": "Bratislava, Slovakia",
+        "bullets": [
+          "Operate as an independent B2B contractor, delivering backend and full-stack engagement work for clients across Europe."
+        ]
+      },
+      {
+        "id": "riwers",
+        "company": "riwers",
+        "role": "Software Engineer",
+        "period": "January 2020 — Present",
+        "location": "Berne, Switzerland",
+        "bullets": [
+          "Built a full-featured enterprise management system handling employee time-tracking, automated invoicing, and third-party accounting/HR integrations using C# .NET, Angular, PostgreSQL, and Docker.",
+          "Designed and implemented a high-throughput, real-time data processing workflow from scratch using a microservices architecture built on Java, Spring Boot, Kafka Streams, Angular, and PostgreSQL — handling ~500k Kafka messages per hour, evaluating data from external measuring stations and dispatching automated push notifications. Migrated the entire containerized setup from Docker Swarm to Kubernetes.",
+          "Engineered contract-first integration microservices and complex freight/pricing calculation engines using Go. Designed OpenAPI/Swagger specifications, implemented dynamic shipping weight/value aggregation logic, containerized services with Docker, and configured CI/CD GitLab pipelines to Azure Container Registry (ACR).",
+          "Led the architectural refactoring and modernization of the open-source ETL tool Gretl (v3 release), significantly improving execution scalability, maintainability, and code quality.",
+          "Built corporate brokerage tools for Swiss M&A transactions. Designed and deployed AWS cloud infrastructure (EC2, RDS, S3, ECS) for customizable SaaS platforms.",
+          "Developed social media content aggregation and publishing engines featuring OAuth2 authentication, embedded web widgets, URL redirect services, and RabbitMQ event-driven workflows."
+        ]
+      },
+      {
+        "id": "total-avengers",
+        "company": "Total Avengers",
+        "role": "Software Developer",
+        "period": "March 2019 — December 2019",
+        "location": "Slovakia",
+        "bullets": [
+          "Developed a back-office warehouse management application integrated with an existing e-shop solution, generating PDF and CSV exports from a PostgreSQL database."
+        ]
+      },
+      {
+        "id": "softsolutions",
+        "company": "SoftSolutions, s.r.o.",
+        "role": "Java / JavaScript Developer",
+        "period": "July 2017 — March 2019",
+        "location": "Bratislava, Slovakia",
+        "bullets": [
+          "Worked on motor vehicle registration software (KFZ) managing millions of vehicles across several German federal states — process workflow implementation, data validation, database updates/migrations, and external API integrations."
+        ]
+      },
+      {
+        "id": "tatra-banka",
+        "company": "Tatra banka",
+        "role": "Corporate & Private Banking Trainee",
+        "period": "October 2016 — February 2017",
+        "location": "Bratislava, Slovakia",
+        "bullets": [
+          "Corporate sales support — custom reports, SQL (Oracle), Visual Basic for Applications."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "id": "masters-finance",
+        "school": "University of Economics in Bratislava",
+        "degree": "Master's Degree, Finance",
+        "year": "2017"
+      },
+      {
+        "id": "bachelors-economy",
+        "school": "University of Economics in Bratislava",
+        "degree": "Bachelor's Degree, National Economy",
+        "year": "2015"
+      }
+    ]
+  },
+  "skills": {
+    "label": "skills",
+    "title": "Technologies I work with",
+    "groups": [
+      {
+        "id": "backend",
+        "label": "Backend",
+        "skills": [
+          { "name": "Java", "icon": "/icons/java.svg" },
+          { "name": "Kotlin", "icon": "/icons/kotlin.svg" },
+          { "name": "C#", "icon": "/icons/cs.svg" },
+          { "name": "Go", "icon": "/icons/go.svg" },
+          { "name": "Rust", "icon": "/icons/rust.svg" },
+          { "name": "Spring", "icon": "/icons/spring.svg" },
+          { "name": ".NET", "icon": "/icons/dotnet.svg" }
+        ]
+      },
+      {
+        "id": "frontend",
+        "label": "Frontend",
+        "skills": [
+          { "name": "TypeScript", "icon": "/icons/typescript.svg" },
+          { "name": "Angular", "icon": "/icons/angular.svg" },
+          { "name": "CSS", "icon": "/icons/css.svg" },
+          { "name": "SCSS", "icon": "/icons/scss.svg" }
+        ]
+      },
+      {
+        "id": "databases",
+        "label": "Databases",
+        "skills": [
+          { "name": "PostgreSQL", "icon": "/icons/postgres.svg" },
+          { "name": "SQLite", "icon": "/icons/sqlite.svg" },
+          { "name": "Redis", "icon": "/icons/redis.svg" },
+          { "name": "MongoDB", "icon": "/icons/mongodb.svg" }
+        ]
+      },
+      {
+        "id": "devops",
+        "label": "DevOps & Infrastructure",
+        "skills": [
+          { "name": "Docker", "icon": "/icons/docker.svg" },
+          { "name": "Kubernetes", "icon": "/icons/kubernetes.svg" },
+          { "name": "AWS", "icon": "/icons/aws.svg" },
+          { "name": "Azure", "icon": "/icons/azure.svg" }
+        ]
+      },
+      {
+        "id": "architecture",
+        "label": "Architecture & Messaging",
+        "skills": [
+          { "name": "Apache Kafka" },
+          { "name": "Kafka Streams" },
+          { "name": "RabbitMQ" },
+          { "name": "OpenAPI / Swagger" },
+          { "name": "Event-Driven Microservices" }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "label": "projects",
+    "title": "Selected work",
+    "sourceLabel": "Source",
+    "liveLabel": "Live Site",
+    "sourceUnavailableDefault": "Source not publicly available",
+    "liveUnavailableDefault": "Not deployed publicly",
+    "entries": [
+      {
+        "id": "project-1",
+        "title": "Project Title",
+        "description": "Short description — replace with your real project details and links.",
+        "tags": ["Tag one", "Tag two"],
+        "placeholder": true
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "testimonials",
+    "title": "What people say",
+    "entries": [
+      {
+        "id": "testimonial-1",
+        "quote": "Daniel is a great contributor to the development of the GIN application. With his knowledge in Java, Spring Boot, Angular, Docker/Kubernetes and PostgreSQL he enriched the application with new features. As a valued team player, he is very supportive and strives to keep the software quality on a high level.",
+        "role": "Project Manager",
+        "company": "EBP",
+        "companyUrl": "https://www.ebp.global/ch-de",
+        "name": "Christoph Graf"
+      }
+    ]
+  },
+  "contact": {
+    "label": "contact",
+    "title": "Let's work together",
+    "intro": "I'm currently open to new long-term B2B contracts. Whether you have a distributed system to build, scale, or modernize — feel free to reach out.",
+    "location": "📍 Bratislava, Slovakia"
+  },
+  "common": {
+    "placeholder": "placeholder"
+  },
+  "footer": {
+    "copyright": "© {{year}} Daniel Kubányi"
+  }
+}

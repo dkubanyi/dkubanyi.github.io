@@ -1,0 +1,58 @@
+<header class="nav">
+  <div class="nav-inner container">
+    <a class="brand" href="#" (click)="closeMenu()">
+      <span class="logo-mark">&gt;_</span>
+      <span class="brand-name">dkubanyi</span>
+    </a>
+
+    <nav class="links" [class.open]="menuOpen()">
+      @for (link of links; track link.id) {
+        <a [href]="link.href" (click)="closeMenu()">{{ 'nav.links.' + link.id | transloco }}</a>
+      }
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button
+          type="button"
+          class="lang-trigger"
+          (click)="toggleLangMenu()"
+          [attr.aria-expanded]="langMenuOpen()"
+          aria-haspopup="menu"
+        >
+          <span class="flag">{{ currentLangMeta().flag }}</span>
+          <span class="chevron" [class.open]="langMenuOpen()">▾</span>
+        </button>
+        @if (langMenuOpen()) {
+          <div class="lang-menu" role="menu">
+            @for (lang of availableLangs; track lang) {
+              <button
+                type="button"
+                role="menuitem"
+                class="lang-option"
+                [class.active]="language.activeLang() === lang"
+                [attr.aria-current]="language.activeLang() === lang ? 'true' : null"
+                (click)="selectLanguage(lang)"
+              >
+                <span class="flag">{{ langMeta[lang].flag }}</span>
+                <span class="lang-name">{{ langMeta[lang].name }}</span>
+              </button>
+            }
+          </div>
+        }
+      </div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        [class.open]="menuOpen()"
+        (click)="toggleMenu()"
+        [attr.aria-label]="'nav.toggleMenu' | transloco"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>

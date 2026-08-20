@@ -1,0 +1,22 @@
+<section class="section contact-section" id="contact">
+  <div class="container contact-inner">
+    <span class="section-label">{{ 'contact.label' | transloco }}</span>
+    <h2 class="section-title">{{ 'contact.title' | transloco }}</h2>
+    <p class="intro">{{ 'contact.intro' | transloco }}</p>
+
+    <div class="links">
+      @for (link of links; track link.href) {
+        <a class="link" [href]="link.href" target="_blank" rel="noopener">
+          @if (link.icon) {
+            <img [ngSrc]="link.icon" alt="" width="20" height="20" loading="lazy" />
+          } @else {
+            <span class="mail-icon">{{ 'contact.mailLabel' | transloco }}</span>
+          }
+          {{ link.label }}
+        </a>
+      }
+    </div>
+
+    <p class="location">{{ 'contact.location' | transloco }}</p>
+  </div>
+</section>
