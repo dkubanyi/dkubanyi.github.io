@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, inject, signal } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, signal, ChangeDetectionStrategy } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { AVAILABLE_LANGS, Lang, Language } from '../../core/language';
 
@@ -11,6 +11,7 @@ interface NavLink {
   selector: 'app-nav',
   imports: [TranslocoPipe],
   templateUrl: './nav.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './nav.scss',
 })
 export class Nav {

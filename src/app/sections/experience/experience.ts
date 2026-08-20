@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 
 interface ExperienceEntry {
@@ -21,6 +21,7 @@ interface EducationEntry {
   selector: 'app-experience',
   imports: [TranslocoPipe],
   templateUrl: './experience.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './experience.scss',
 })
 export class Experience {

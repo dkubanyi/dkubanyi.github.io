@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 
 interface TestimonialEntry {
@@ -15,6 +15,7 @@ interface TestimonialEntry {
   selector: 'app-testimonials',
   imports: [TranslocoPipe],
   templateUrl: './testimonials.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './testimonials.scss',
 })
 export class Testimonials {

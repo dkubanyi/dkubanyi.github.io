@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Nav} from './sections/nav/nav';
 import {Hero} from './sections/hero/hero';
 import {About} from './sections/about/about';
@@ -21,6 +21,7 @@ import {Footer} from './sections/footer/footer';
     Contact,
     Footer],
   templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.scss',
 })
 export class App {}
