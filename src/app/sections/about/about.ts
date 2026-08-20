@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
+import { START_YEAR } from '../../core/constants';
 
 interface QuickFact {
   id: string;
@@ -12,6 +13,7 @@ interface QuickFact {
   styleUrl: './about.scss',
 })
 export class About {
+  protected readonly year = new Date().getFullYear() - START_YEAR;
   protected readonly facts: QuickFact[] = [
     { id: 'experience' },
     { id: 'engagement' },

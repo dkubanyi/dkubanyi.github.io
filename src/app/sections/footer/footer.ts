@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-footer',
-  imports: [TranslocoPipe],
+  imports: [TranslocoPipe, NgOptimizedImage],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
+import {NgOptimizedImage} from '@angular/common';
 
 interface ContactLink {
   label: string;
@@ -9,7 +10,7 @@ interface ContactLink {
 
 @Component({
   selector: 'app-contact',
-  imports: [TranslocoPipe],
+  imports: [TranslocoPipe, NgOptimizedImage],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })

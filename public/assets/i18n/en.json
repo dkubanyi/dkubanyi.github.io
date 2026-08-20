@@ -13,14 +13,14 @@
   "hero": {
     "greeting": "Hi, I am",
     "tagline": "I build distributed backend systems",
-    "pitch": "Lead Senior Backend Engineer with 9+ years of production experience designing, building and scaling event-driven microservices, high-throughput data pipelines, and cloud-native systems in <span class=\"hl\">Java</span>, <span class=\"hl\">Go</span>, <span class=\"hl\">Kotlin</span> and <span class=\"hl\">.NET</span>. Based in Bratislava, Slovakia — available for long-term B2B contracts.",
+    "pitch": "Lead Senior Backend Engineer with {{year}}+ years of production experience designing, building and scaling event-driven microservices, high-throughput data pipelines, and cloud-native systems in <span class=\"hl\">Java</span>, <span class=\"hl\">Go</span>, <span class=\"hl\">Kotlin</span> and <span class=\"hl\">.NET</span>. Based in Bratislava, Slovakia — available for long-term B2B contracts.",
     "ctaContact": "Get in touch",
     "ctaGithub": "View GitHub"
   },
   "about": {
     "label": "about",
     "title": "Who I am",
-    "p1": "I'm a lead senior backend engineer with 9+ years of production experience designing, building and scaling event-driven microservices, high-throughput data processing pipelines, and cloud-native systems. My primary expertise lies in Java, Go, Kotlin and C# .NET, backed by deep experience with Apache Kafka, Kubernetes, PostgreSQL and Docker.",
+    "p1": "I'm a lead senior backend engineer with {{year}}+ years of production experience designing, building and scaling event-driven microservices, high-throughput data processing pipelines, and cloud-native systems. My primary expertise lies in Java, Go, Kotlin and C# .NET, backed by deep experience with Apache Kafka, Kubernetes, PostgreSQL and Docker.",
     "p2": "While my core focus is robust backend architecture and distributed systems, I regularly deliver full-stack functionality using Angular — from contract-first RESTful microservices with OpenAPI/Swagger to containerized, cloud-native deployments across AWS and Azure.",
     "p3": "I work exclusively on B2B contracts, with a strong preference for long-term engagements where I can grow with a product and a team.",
     "facts": {
@@ -95,13 +95,13 @@
     "education": [
       {
         "id": "masters-finance",
-        "school": "Ekonomická univerzita v Bratislave",
+        "school": "University of Economics in Bratislava",
         "degree": "Master's Degree, Finance",
         "year": "2017"
       },
       {
         "id": "bachelors-economy",
-        "school": "Ekonomická univerzita v Bratislave",
+        "school": "University of Economics in Bratislava",
         "degree": "Bachelor's Degree, National Economy",
         "year": "2015"
       }
@@ -181,13 +181,6 @@
         "description": "Short description — replace with your real project details and links.",
         "tags": ["Tag one", "Tag two"],
         "placeholder": true
-      },
-      {
-        "id": "project-2",
-        "title": "Another Project",
-        "description": "Short description — replace with your real project details and links.",
-        "tags": ["Tag one", "Tag two"],
-        "placeholder": true
       }
     ]
   },
@@ -202,24 +195,6 @@
         "company": "EBP",
         "companyUrl": "https://www.ebp.global/ch-de",
         "name": "Christoph Graf"
-      },
-      {
-        "id": "testimonial-2",
-        "quote": "Placeholder — replace with a real quote about working with Daniel.",
-        "role": "Role",
-        "company": "Company",
-        "companyUrl": null,
-        "name": "Name",
-        "placeholder": true
-      },
-      {
-        "id": "testimonial-3",
-        "quote": "Placeholder — replace with a real quote about working with Daniel.",
-        "role": "Role",
-        "company": "Company",
-        "companyUrl": null,
-        "name": "Name",
-        "placeholder": true
       }
     ]
   },
@@ -227,7 +202,6 @@
     "label": "contact",
     "title": "Let's work together",
     "intro": "I'm currently open to new long-term B2B contracts. Whether you have a distributed system to build, scale, or modernize — feel free to reach out.",
-    "mailLabel": "Mail:",
     "location": "📍 Bratislava, Slovakia"
   },
   "common": {

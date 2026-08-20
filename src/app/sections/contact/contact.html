@@ -8,7 +8,7 @@
       @for (link of links; track link.href) {
         <a class="link" [href]="link.href" target="_blank" rel="noopener">
           @if (link.icon) {
-            <img [src]="link.icon" alt="" width="20" height="20" loading="lazy" />
+            <img [ngSrc]="link.icon" alt="" width="20" height="20" loading="lazy" />
           } @else {
             <span class="mail-icon">{{ 'contact.mailLabel' | transloco }}</span>
           }

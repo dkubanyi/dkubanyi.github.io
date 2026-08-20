@@ -13,14 +13,14 @@
   "hero": {
     "greeting": "Hallo, ich bin",
     "tagline": "Ich baue verteilte Backend-Systeme",
-    "pitch": "Lead Senior Backend Engineer mit über 9 Jahren Produktionserfahrung in der Konzeption, Entwicklung und Skalierung ereignisgesteuerter Microservices, Hochdurchsatz-Datenpipelines und Cloud-nativer Systeme in <span class=\"hl\">Java</span>, <span class=\"hl\">Go</span>, <span class=\"hl\">Kotlin</span> und <span class=\"hl\">.NET</span>. Ansässig in Bratislava, Slowakei — verfügbar für langfristige B2B-Verträge.",
+    "pitch": "Lead Senior Backend Engineer mit über {{year}} Jahren Produktionserfahrung in der Konzeption, Entwicklung und Skalierung ereignisgesteuerter Microservices, Hochdurchsatz-Datenpipelines und Cloud-nativer Systeme in <span class=\"hl\">Java</span>, <span class=\"hl\">Go</span>, <span class=\"hl\">Kotlin</span> und <span class=\"hl\">.NET</span>. Ansässig in Bratislava, Slowakei — verfügbar für langfristige B2B-Verträge.",
     "ctaContact": "Kontakt aufnehmen",
     "ctaGithub": "GitHub ansehen"
   },
   "about": {
     "label": "über mich",
     "title": "Wer ich bin",
-    "p1": "Ich bin ein Lead Senior Backend Engineer mit über 9 Jahren Produktionserfahrung in der Konzeption, Entwicklung und Skalierung ereignisgesteuerter Microservices, Hochdurchsatz-Datenverarbeitungspipelines und Cloud-nativer Systeme. Mein Schwerpunkt liegt auf Java, Go, Kotlin und C# .NET, gestützt durch fundierte Erfahrung mit Apache Kafka, Kubernetes, PostgreSQL und Docker.",
+    "p1": "Ich bin ein Lead Senior Backend Engineer mit über {{year}} Jahren Produktionserfahrung in der Konzeption, Entwicklung und Skalierung ereignisgesteuerter Microservices, Hochdurchsatz-Datenverarbeitungspipelines und Cloud-nativer Systeme. Mein Schwerpunkt liegt auf Java, Go, Kotlin und C# .NET, gestützt durch fundierte Erfahrung mit Apache Kafka, Kubernetes, PostgreSQL und Docker.",
     "p2": "Mein Kernfokus liegt auf robuster Backend-Architektur und verteilten Systemen, doch ich liefere regelmäßig auch Full-Stack-Funktionalität mit Angular — von contract-first RESTful Microservices mit OpenAPI/Swagger bis hin zu containerisierten, Cloud-nativen Deployments auf AWS und Azure.",
     "p3": "Ich arbeite ausschließlich auf B2B-Vertragsbasis, mit einer starken Präferenz für langfristige Engagements, in denen ich mit einem Produkt und einem Team wachsen kann.",
     "facts": {
@@ -95,13 +95,13 @@
     "education": [
       {
         "id": "masters-finance",
-        "school": "Ekonomická univerzita v Bratislave",
+        "school": "Wirtschaftsuniversität Bratislava",
         "degree": "Master-Abschluss, Finanzwesen",
         "year": "2017"
       },
       {
         "id": "bachelors-economy",
-        "school": "Ekonomická univerzita v Bratislave",
+        "school": "Wirtschaftsuniversität Bratislava",
         "degree": "Bachelor-Abschluss, Volkswirtschaftslehre",
         "year": "2015"
       }
@@ -181,13 +181,6 @@
         "description": "Kurze Beschreibung — durch echte Projektdetails und Links ersetzen.",
         "tags": ["Tag one", "Tag two"],
         "placeholder": true
-      },
-      {
-        "id": "project-2",
-        "title": "Weiteres Projekt",
-        "description": "Kurze Beschreibung — durch echte Projektdetails und Links ersetzen.",
-        "tags": ["Tag one", "Tag two"],
-        "placeholder": true
       }
     ]
   },
@@ -202,24 +195,6 @@
         "company": "EBP",
         "companyUrl": "https://www.ebp.global/ch-de",
         "name": "Christoph Graf"
-      },
-      {
-        "id": "testimonial-2",
-        "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
-        "role": "Rolle",
-        "company": "Unternehmen",
-        "companyUrl": null,
-        "name": "Name",
-        "placeholder": true
-      },
-      {
-        "id": "testimonial-3",
-        "quote": "Platzhalter — durch ein echtes Zitat über die Zusammenarbeit mit Daniel ersetzen.",
-        "role": "Rolle",
-        "company": "Unternehmen",
-        "companyUrl": null,
-        "name": "Name",
-        "placeholder": true
       }
     ]
   },
@@ -227,7 +202,6 @@
     "label": "kontakt",
     "title": "Lass uns zusammenarbeiten",
     "intro": "Ich bin derzeit offen für neue langfristige B2B-Verträge. Ob Sie ein verteiltes System aufbauen, skalieren oder modernisieren möchten — kontaktieren Sie mich gerne.",
-    "mailLabel": "E-Mail:",
     "location": "📍 Bratislava, Slowakei"
   },
   "common": {

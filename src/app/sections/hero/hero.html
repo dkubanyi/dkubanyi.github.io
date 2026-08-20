@@ -3,7 +3,7 @@
     <p class="greeting">{{ 'hero.greeting' | transloco }}</p>
     <h1 class="name">Daniel Kubányi</h1>
     <h2 class="tagline">{{ 'hero.tagline' | transloco }}</h2>
-    <p class="pitch" [innerHTML]="'hero.pitch' | transloco"></p>
+    <p class="pitch" [innerHTML]="'hero.pitch' | transloco: { year }"></p>
     <div class="actions">
       <a class="btn btn-primary" href="#contact">{{ 'hero.ctaContact' | transloco }}</a>
       <a class="btn btn-secondary" href="https://github.com/dkubanyi" target="_blank" rel="noopener">{{ 'hero.ctaGithub' | transloco }}</a>

@@ -28,7 +28,7 @@ export class Nav {
     { id: 'about', href: '#about' },
     { id: 'experience', href: '#experience' },
     { id: 'skills', href: '#skills' },
-    { id: 'projects', href: '#projects' },
+    // { id: 'projects', href: '#projects' },
     { id: 'testimonials', href: '#testimonials' },
     { id: 'contact', href: '#contact' },
   ];

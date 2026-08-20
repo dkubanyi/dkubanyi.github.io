@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
+import {NgOptimizedImage} from '@angular/common';
 
 interface Skill {
   name: string;
@@ -14,7 +15,7 @@ interface SkillGroup {
 
 @Component({
   selector: 'app-skills',
-  imports: [TranslocoPipe],
+  imports: [TranslocoPipe, NgOptimizedImage],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })

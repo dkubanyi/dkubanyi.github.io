@@ -18,27 +18,27 @@
           class="lang-trigger"
           (click)="toggleLangMenu()"
           [attr.aria-expanded]="langMenuOpen()"
-          aria-haspopup="listbox"
+          aria-haspopup="menu"
         >
           <span class="flag">{{ currentLangMeta().flag }}</span>
           <span class="chevron" [class.open]="langMenuOpen()">▾</span>
         </button>
         @if (langMenuOpen()) {
-          <ul class="lang-menu" role="listbox">
+          <div class="lang-menu" role="menu">
             @for (lang of availableLangs; track lang) {
-              <li role="option" [attr.aria-selected]="language.activeLang() === lang">
-                <button
-                  type="button"
-                  class="lang-option"
-                  [class.active]="language.activeLang() === lang"
-                  (click)="selectLanguage(lang)"
-                >
-                  <span class="flag">{{ langMeta[lang].flag }}</span>
-                  <span class="lang-name">{{ langMeta[lang].name }}</span>
-                </button>
-              </li>
+              <button
+                type="button"
+                role="menuitem"
+                class="lang-option"
+                [class.active]="language.activeLang() === lang"
+                [attr.aria-current]="language.activeLang() === lang ? 'true' : null"
+                (click)="selectLanguage(lang)"
+              >
+                <span class="flag">{{ langMeta[lang].flag }}</span>
+                <span class="lang-name">{{ langMeta[lang].name }}</span>
+              </button>
             }
-          </ul>
+          </div>
         }
       </div>
 
