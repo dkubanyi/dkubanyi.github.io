@@ -24,6 +24,7 @@ export class Skills {
   private readonly transloco = inject(TranslocoService);
 
   protected get groups(): SkillGroup[] {
-    return this.transloco.translate<SkillGroup[]>('skills.groups');
+    const groups = this.transloco.translate<SkillGroup[]>('skills.groups');
+    return Array.isArray(groups) ? groups : [];
   }
 }
