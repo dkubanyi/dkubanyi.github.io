@@ -22,6 +22,7 @@ export class Testimonials {
   private readonly transloco = inject(TranslocoService);
 
   protected get testimonials(): TestimonialEntry[] {
-    return this.transloco.translate<TestimonialEntry[]>('testimonials.entries');
+    const list = this.transloco.translate<TestimonialEntry[]>('testimonials.entries');
+    return Array.isArray(list) ? list : [];
   }
 }

@@ -28,10 +28,12 @@ export class Experience {
   private readonly t = inject(TranslocoService);
 
   protected get jobs(): ExperienceEntry[] {
-    return this.t.translate<ExperienceEntry[]>('experience.entries');
+    const entries = this.t.translate<ExperienceEntry[]>('experience.entries');
+    return Array.isArray(entries) ? entries : [];
   }
 
   protected get education(): EducationEntry[] {
-    return this.t.translate<EducationEntry[]>('experience.education');
+    const entries = this.t.translate<EducationEntry[]>('experience.education');
+    return Array.isArray(entries) ? entries : [];
   }
 }

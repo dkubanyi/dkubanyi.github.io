@@ -15,7 +15,7 @@
             @if (job.location) {
               <p class="location">{{ job.location }}</p>
             }
-            @if (job.bullets.length) {
+            @if (job.bullets?.length) {
               <ul class="bullets">
                 @for (bullet of job.bullets; track bullet) {
                   <li>{{ bullet }}</li>
